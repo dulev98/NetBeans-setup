@@ -1,0 +1,21 @@
+Klonirati projekat sa Gita:
+-git clone https://gitlab.ticketing.rs/ticketing/ticketing-2018.git
+
+GIT:
+-pozicionirati se u folder na mrezi : cd www/dusanvtest.ticketing.rs/
+-composer install --prefer-dist
+
+
+Apache NetBeans:
+-source files -> desni klik -> Run Configuration: (slika: RunConfiguration.jpg) 
+-napraviti novu konfiguraciju :213
+-ubaciti u Project URL: http://192.168.4.213:22/
+-Remote Connection: 213 ->  MANAGE (slika: ManageRemoteConnection.jpg)
+-izabrati opciju > Upload Files: On Save
+
+ubaciti fajl dbcred.inc.php u folder /application/config i uneti svoj PIB koji se nalazi u HEIDISQLu i tom fajlu izvrsiti izmenu za konekciju sa bazom sa svojim username-om i sifrom
+ubaciti fajl dbcred1.inc.php u folder /include db_conf i takodje izvrsiti izmene za konekciju (username i password)
+include1.jpg i include2.jpg
+
+-dizanje na WINscp (server) desnim klikom na zeljeni foldec kliknuti upload
+
